@@ -1,11 +1,11 @@
 source "googlecompute" "gcp-debian-tezos" {
-  project_id = "personal-testing-ecad"
-  source_image_family = "debian-10"
-  image_family = "debian-10"
-  ssh_username = "gimbrailo"
-  zone = "us-central1-a"
-  image_description = "Debian image used for Tezos"
-  image_name = "debian-10-buster-tezos"
+  project_id = "${var.project_id}"
+  source_image_family = "${var.source_image_family}"
+  ssh_username = "${var.ssh_username}"
+  zone = "${var.zone}"
+  image_description = "Image used for Tezos"
+  image_name = local.image_name
+  # TODO: Optimize disk size and type. This is most likely overkill
   disk_size = 16
   disk_type = "pd-ssd"
   machine_type = "e2-medium"
