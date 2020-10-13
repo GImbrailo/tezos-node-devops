@@ -9,8 +9,7 @@ sudo su ansible
 sudp apt update
 sudo apt upgrade
 sudo apt install python3-pip ansible -y
-# TODO: Remove the below line if this works again
-# sudo apt install ansible -y
 
 ## Install the python docker module. Make sure that you install either docker or docker.py. Do not install bot
+sudo pip3 install docker
 pip3 install docker

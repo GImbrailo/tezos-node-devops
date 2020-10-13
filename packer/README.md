@@ -13,6 +13,7 @@ If you are happy with the configurations of the Build script the it is a case of
 ```bash
 packer build \
 -var 'project_id=PROJECT_ID' \
+-var 'ssh_username=SSH_USERNAME'
 PROJECT_DIR\packer\
 ```
 ### Variables

@@ -1,8 +1,5 @@
 variable "project_id" {}
-variable "ssh_username" {
-    # TODO: Remove later
-    default = "gimbrailo"
-}
+variable "ssh_username" {}
 variable "source_image_family" {
     default = "debian-10"
 }
