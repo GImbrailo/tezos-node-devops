@@ -8,6 +8,10 @@ Ansible [Installation Guide](https://docs.ansible.com/ansible/latest/installatio
 
 ## Steps to create a Docker instance and Tezos node with ansible
 1. Make sure you are in the `PROJECT_DIR\ansible\` directory
+2. Create the roles directory
+```bash
+mkdir ./roles
+```
 2. Install the geerilngguy.docker role
 ```bash
 ansible-galaxy install geerlingguy.docker --roles-path ./roles

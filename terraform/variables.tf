@@ -15,3 +15,7 @@ variable "tezos_ssh_user" {
 variable "tezos_ssh_user_public_key" {
     description = "The public key location for the ssh user"
 }
+# Uncomment this section if you skipped the Packer part
+# variable "startup_script_file" {
+#     description = "The startup script for the GCP instance"
+# }

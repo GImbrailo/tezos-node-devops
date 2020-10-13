@@ -41,4 +41,8 @@ resource "google_compute_instance" "tezos-test-instance" {
   metadata = {
     ssh-keys = "${var.tezos_ssh_user}:${file(var.tezos_ssh_user_public_key)}"
   }
+
+  # Uncomment below if you skipped the Packer section and what to use a startup script
+  # metadata_startup_script = "${file(var.startup_script_file)}"
+
 }
