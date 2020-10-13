@@ -1,5 +1,5 @@
 - hosts: tezosservers
-  user: ansible
+  user: ansible-user
   roles:
     - { role: geerlingguy.docker, become: yes }
     - { role: ecadlabs.tezos_node, tezos_network: "delphinet", ansible_python_interpreter: "/usr/bin/python3.7", become: yes }

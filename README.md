@@ -54,9 +54,18 @@ ansible-playbook ./playbook.yml -i ./inventory.yml
 ```bash
 curl -s INSTANCE_EXTERNAL_IP:8732/monitor/bootstrapped
 ```
+or
+```bash
+ssh ansible@INSTANCE_EXTERNAL_IP "docker exec -i delphinet_node tezos-client bootstrapped"
+```
 6. If everything went well you should see a response like this
 ```json
 {"block":"A HASH VALUE","timestamp":"2020-09-29T19:40:11Z"}
+```
+or
+```bash
+Current head: BKyPYNxKRWwt (timestamp: 2020-10-04T18:51:57-00:00, validation: 2020-10-13T19:59:10-00:00)
+Bootstrapped.
 ```
 
 ---
