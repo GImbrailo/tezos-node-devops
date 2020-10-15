@@ -1,7 +1,7 @@
 # The Ansible Section
 
 ## Why Ansible?
-Ansible is a great tool to orchestrate repetative tasks whether they are simple or very complex. There are two main roles that we are using for in this section: geerlingguy.docker and ecadlabs.tezos_node
+Ansible is a great tool to orchestrate repetitive tasks whether they are simple or very complex. There are two main roles that we are using for in this section: geerlingguy.docker and ecadlabs.tezos_node
 
 ## Prerequisites
 Ansible [Installation Guide](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
@@ -12,7 +12,7 @@ Ansible [Installation Guide](https://docs.ansible.com/ansible/latest/installatio
 ```bash
 mkdir ./roles
 ```
-2. Install the geerilngguy.docker role
+2. Install the geerlingguy.docker role
 ```bash
 ansible-galaxy install geerlingguy.docker --roles-path ./roles
 ```
@@ -28,5 +28,5 @@ ansible-playbook ./playbook.yml -i ./inventory.yml
 ```
 
 ## Potential Gotchas
-* The ecadlabs.tezos_node role runs with elevated priviledges so make sure that the python modules are installed in the correct python environment.
-* Make sure that the `playbook.yml` file containe the correct python runtime environment.
+* The ecadlabs.tezos_node role runs with elevated privileges so make sure that the python modules are installed in the correct python environment.
+* Make sure that the `playbook.yml` file contains the correct python runtime environment.

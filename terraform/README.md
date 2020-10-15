@@ -11,7 +11,7 @@ Terraform is an extremely useful Infrastructure-as-Code that is in many ways pla
 
 ## Running the Terraform project
 1. Make sure you are in the `PROJECT_DIR\terraform\`
-2. For input variable you could creae a `.tfvars` file or use the command line variable. Here is an example of a `.tfvars` file called *my-vars.tfvars*:
+2. For input variable you could create a `.tfvars` file or use the command line variable. Here is an example of a `.tfvars` file called *my-vars.tfvars*:
 ```text
 project_id="PROJECT_ID"
 zone="ZONE"

@@ -1,7 +1,7 @@
 # The Packer Section
 
 ## Why Packer?
-This section of the project is devoted to Packer. Packer is part of the Hashicorp stack and is used to create virtual images for VMs or Containers. The reason one might want to use Packer and a custom image is to bake in certain repetative tasks for instance installing Ansible.
+This section of the project is devoted to Packer. Packer is part of the HashiCorp stack and is used to create virtual images for VMs or Containers. The reason one might want to use Packer and a custom image is to bake in certain repetitive tasks for instance installing Ansible.
 
 The code in this section is divided into a source/build file that will build our image, as well as a variables file for the most important variables. If you need to customize the build section anymore please see https://www.packer.io/docs/builders/googlecompute.html.
 
@@ -9,7 +9,7 @@ The code in this section is divided into a source/build file that will build our
 Packer [Installation Guide](https://learn.hashicorp.com/tutorials/packer/getting-started-install)
 
 ## Running the Packer project
-If you are happy with the configurations of the Build script the it is a case of sipmple using the command:
+If you are happy with the configurations of the Build script the it is a case of simple using the command:
 ```bash
 packer build \
 -var 'project_id=PROJECT_ID' \

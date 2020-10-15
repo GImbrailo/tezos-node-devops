@@ -4,21 +4,21 @@ This is a solution for starting a Tezos node running in a docker container on a 
 * [Terraform](terraform/)
 * [Ansible](ansible/)
 
-Please see each individual section for more details on how each piece is deployed.
+Please see each section for more details on how each piece is deployed.
 
 ## What each section does
 ### Packer
-Packer builds images for virtual machines and containers. It is a good idea to have defined images that you can manage to have the exact software and versions that your solution requirs. Building your own image also helps when patching is included in your CI/CD pipeline.
+Packer builds images for virtual machines and containers. It is a good idea to have defined images that you can manage to have the exact software and versions that your solution requires. Building your custom image also helps when patching is included in your CI/CD pipeline.
 
-For this project we use Packer to build a custom Debian 10 Buster instance, create a user that will run Docker and Ansible, as well as install the `docker` python module.
+For this project, we use Packer to build a custom Debian 10 Buster instance, create a user that will run Docker and Ansible, as well as install the `docker` python module.
 
-### Terrafrom
-Terraform helps us define and provision our infrastructure using code in a declaritive manner.
+### Terraform
+Terraform helps us define and provision our infrastructure using code in a declarative manner.
 
-In this project Terrform provisions a GCP instance, network, and firewall in our Google Cloud project.
+In this project Terraform provisions a GCP instance, network, and firewall in our Google Cloud project.
 
 ### Ansible
-In this project we use Ansible to cofigure and deploy Docker on to the virtual machine and then run a Tezos node in a Docker container.
+In this project, we use Ansible to configure and deploy Docker on to the virtual machine and then run a Tezos node in a Docker container.
 
 There are two roles in the ansible section that can be installed using `ansible-galaxy`:
 * [geerlingguy.docker](https://github.com/geerlingguy/ansible-role-docker)
@@ -31,8 +31,8 @@ There are two roles in the ansible section that can be installed using `ansible-
 * GCP SDK
 * An SSH public/private key pair
 
-## High level steps to run this project
-The steps listed here are high level steps, for more information on each step please see the relevant section README.
+## High-level steps to run this project
+The steps listed here are high-level steps, for more information on each step please see the relevant section README.
 1. Clone this repository
 2. Follow the steps in the Packer section and build the image
 ```bash
@@ -71,6 +71,6 @@ Bootstrapped.
 ---
 **IMPORTANT NOTE**
 
-If you chose to not build your own virtual machine image please be sure to add the instance metadata script to initialize the VM.
+If you chose to not build your custom virtual machine image please be sure to add the instance metadata script to initialize the VM.
 
 ---
