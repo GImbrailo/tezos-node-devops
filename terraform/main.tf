@@ -19,7 +19,8 @@ resource "google_compute_firewall" "tezos-test-firewall" {
 }
 
 resource "google_compute_instance" "tezos-test-instance" {
-  name         = "tezos-test-instance"
+  # name         = var.instance_name
+  name = "gitlab-test-runner"
   machine_type = "e2-medium"
 
   boot_disk {
@@ -43,6 +44,6 @@ resource "google_compute_instance" "tezos-test-instance" {
   }
 
   # Uncomment below if you skipped the Packer section and what to use a startup script
-  # metadata_startup_script = "${file(var.startup_script_file)}"
+  metadata_startup_script = "${file("scripts/init.sh")}"
 
 }

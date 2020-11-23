@@ -4,7 +4,7 @@
 sudo adduser --disabled-password --gecos "" ansible-user
 sudo groupadd docker
 sudo usermod -aG docker,sudo ansible-user
-sudo su ansible
+sudo su ansible-user
 
 ## Install pip and ansible
 sudp apt update

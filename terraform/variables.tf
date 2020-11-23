@@ -1,6 +1,10 @@
 variable "project_id" {
     description = "Your Google Cloud project ID"
 }
+# variable "instance_name" {
+#     description = "The name of your instance"
+#     default = "Terraform-Instance-${timestamp()}"
+# }
 variable "zone" {
     default = "us-central1-a"
     description = "The zone where you want your infrastructure to be deployed to"

@@ -41,3 +41,6 @@ Optional:
 * `image_id`: The image name that you want to use. The default is `debian-10-buster-v20200910`
 
 * `zone`: The Zone where you want the image created. This should be the same as the rest of the project and defaults to `us-central1-a`
+
+### Known Issues
+* Sometimes there is an issues where the user cannot SSH into the instance. If this happens just destroy the terraform deployment and recreate it.
