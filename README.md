@@ -72,5 +72,6 @@ Bootstrapped.
 **IMPORTANT NOTE**
 
 If you chose to not build your custom virtual machine image please be sure to add the instance metadata script to initialize the VM.
+#
 
 ---
